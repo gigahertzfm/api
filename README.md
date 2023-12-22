@@ -12,7 +12,7 @@ Podem existir informações adicionais nas respostas da API que não estão docu
 
 Todos os endpoints utilizam a URL base `https://gigahertz.fm/api/`, as respostas são sempre em formato JSON. As requisições devem ser sempre `https`.
 
-## Lista de podcasts: `https://gigahertz.fm/api/podcasts.json`
+## Lista de podcasts: `podcasts.json`
 
 Este endpoint recupera informações básicas sobre os podcasts publicados pela Gigahertz.
 
@@ -40,7 +40,7 @@ Este endpoint recupera informações básicas sobre os podcasts publicados pela 
     - **title**: O título do podcast.
     - **updatedAt**: A última data e hora da atualização das informações do podcast.
 
-## Detalhes do podcast: `https://gigahertz.fm/api/podcasts/{slug}/index.json`
+## Detalhes do podcast: `podcasts/{slug}/index.json`
 
 Este endpoint fornece informações detalhadas sobre o podcast um podcast específico. O parâmetro `slug` corresponde ao `slug` retornado na API `podcasts`.
 
