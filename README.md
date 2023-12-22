@@ -8,6 +8,8 @@ Disponibilizamos a API como forma de facilitar o desenvolvimento de ferramentas 
 
 A API não pode ser utilizada para fins comerciais e a utilização da mesma não permite o uso da marca Gigahertz, logotipos, capas e trilhas sonoras dos podcasts, que são protegidos por copyright.
 
+Caso tenha dúvidas sobre sua ideia de uso da API, [poste na área de perguntas e respostas](https://github.com/gigahertzfm/api/discussions/new?category=ideias).
+
 ## Status da API
 
 **A API ainda não é considerada estável**. O formato das respostas e disponibilidade de endpoints pode variar ao longo do tempo. Tentaremos manter este repositório atualizado sempre que houver alterações.
