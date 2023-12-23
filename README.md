@@ -52,7 +52,7 @@ Exemplo: https://gigahertz.fm/api/podcasts.json
 
 ## Detalhes do podcast: `podcasts/{slug}/index.json`
 
-Este endpoint fornece informações detalhadas sobre o podcast um podcast específico. O parâmetro `slug` corresponde ao `slug` retornado na API `podcasts`.
+Este endpoint fornece informações detalhadas sobre um podcast específico. O parâmetro `slug` corresponde ao `slug` retornado na API `podcasts`.
 
 Exemplo: `https://gigahertz.fm/api/podcasts/adt/index.json`
 
