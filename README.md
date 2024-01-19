@@ -109,3 +109,24 @@ A URL do episódio 78 do Área de Trabalho é `https://gigahertz.fm/podcasts/adt
 Acessando `https://gigahertz.fm/podcasts/adtrabalho/78.txt`, o site responde com uma versão em texto puro da transcrição.
 
 > **NOTA:** como as transcrições são automáticas, podem existir erros em diversas palavras e informações adicionais "alucinadas" pelo modelo, especialmente no final da transcrição. Alguns episódios podem conter falhas técnicas na transcrição, incluindo problemas de encoding ou falas repetidas. Se encontrar esses problemas de encoding e/ou falas repetidas, por favor nos avise através do link de feedback no site da Gigahertz.
+
+## Proxy HTTP
+
+Sabemos que grande parte dos participantes dos nossos [desafios](http://github.com/gigahertzfm/desafioadt2024) gostam de implementar acesso aos conteúdos da Gigahertz em dispositivos antigos.
+
+Um problema comum ao tentar fazer isso é a falta de suporte que muitos desses dispositivos tem ao HTTPS/TLS. Pensando nisso, criamos um proxy que pode ser utilizado para acessar os conteúdos da Gigahertz sem HTTPS.
+
+O endpoint do proxy é `http://proxy.areadetransferencia.com.br/proxy`. Utilize a query string `url` para informar a URL da Gigahertz que deseja acessar. A URL precisa ser completa, incluindo o `https://` na frente. Lembre-se que dependendo do ambiente onde estiver fazendo o request, pode ser necessário codificar o parâmetro usando URL encoding.
+
+**Exemplo de chamada à API da Gigahertz através do proxy:**
+
+`http://proxy.areadetransferencia.com.br/proxy?url=https://gigahertz.fm/api/podcasts.json`
+
+O proxy também reescreve todas as URLs encontradas na resposta original para que passem pelo proxy, então respostas que contém URLs como os feeds dos podcasts já terão as URLs dos arquivos de áudio reescritas para passarem pelo proxy.
+
+É importante ressaltar que o proxy só aceita URLs que fazem parte dos domínios da Gigahertz: `gigahertz.fm` ou `cdn.gigahertz.fm`, acesso a URLs de sites externos são bloqueados pelo proxy por segurança.
+
+
+
+
+
